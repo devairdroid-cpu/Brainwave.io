@@ -1,0 +1,39 @@
+
+
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url('../../fonts/Roboto/static/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: InterRegular;
+  src: url('../../fonts/Inter/static/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: InterSemiBold;
+  src: url('../../fonts/Inter/static/Inter-SemiBold.ttf');
+}
+
+:root{
+
+    /* COLORS */
+
+    --mainGreen: #4CAF4F;
+    --mainWhite: #FFFFFF;
+    --text-color: #4D4D4D;
+    --text-color-light: #717171;
+    --bodycolor: #F5F5F5;
+    --graycolor: #F5F7FA;
+    --footercolor: #263238;
+    --footertextcolor: #D9DBE1;
+}
+
+    /* FONTS */
+
+:root{
+    --roboto-medium: 'RobotoMedium', sans-serif;
+    --inter-regular: 'InterRegular', sans-serif;
+    --inter-semi-bold: 'InterSemiBold', sans-serif;
+}
