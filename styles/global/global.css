@@ -5,7 +5,7 @@ html {
 
 /* HEADER SECTION */
 .header_cont {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .header_cont h1 {
   font-family: Rubik;
@@ -15,10 +15,32 @@ html {
   letter-spacing: -0.13px;
   padding: 25px 740px 26px 703px;
 }
+/* MAIN SECTION */
+.main_section {
+  width: 100%;
+  text-align: center;
+  background-color: #F4F7FA;
+}
+
+.login {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.content_login {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  margin-top: 12px;
+}
+
 /*  FOOTER SECTION   */
 .footer {
   width: 100%;
-  background-color:#161c2d;
+  background-color: #161c2d;
 }
 
 .footer_cont {
