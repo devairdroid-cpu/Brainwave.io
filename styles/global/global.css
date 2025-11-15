@@ -19,7 +19,7 @@ html {
 .main_section {
   width: 100%;
   text-align: center;
-  background-color: #F4F7FA;
+  background-color: #f4f7fa;
 }
 
 .login {
@@ -37,6 +37,51 @@ html {
   margin-top: 12px;
 }
 
+.form {
+  width: 350px;
+  height: 373px;
+  opacity: 1;
+  border-radius: 10px;
+  border-width: 1px;
+  box-shadow: 0px 34px 33px -23px #161c2d21;
+  border: 1px solid #e7e9ed;
+}
+input {
+  border: 1px solid var(--lightGrey);
+  border-radius: 8px;
+  width: 300px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px;
+  margin-bottom: 21px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--mainBlack);
+    padding: 7px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 /*  FOOTER SECTION   */
 .footer {
   width: 100%;
