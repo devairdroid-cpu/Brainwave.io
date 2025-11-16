@@ -7,6 +7,7 @@ html {
 .header_cont {
   background-color: rgb(255, 255, 255);
 }
+
 .header_cont h1 {
   font-family: Rubik;
   font-weight: 700;
@@ -15,21 +16,25 @@ html {
   letter-spacing: -0.13px;
   padding: 25px 740px 26px 703px;
 }
+
 /* MAIN SECTION */
 .main_section {
-  width: 1600px;
-  height: 910px;
-  padding-top: 79px;
-  opacity: 1;
-  text-align: center;
   background-color: #f4f7fa;
+  padding: 80px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+/* LOGIN TITLE + TEXT */
 .login {
   font-family: Roboto;
   font-weight: 700;
   font-size: 60px;
   line-height: 65px;
+  color: #161c2d;
+  
 }
 
 .content_login {
@@ -38,22 +43,21 @@ html {
   font-size: 19px;
   line-height: 32px;
   margin-top: 12px;
+  color: #161c2d;
+  opacity: 0.7;
 }
 
 /* ==== LOGIN FORM BOX ==== */
 
-/* Kartın özü – ölçünü burdan dəyişə bilərsən */
+/* Kartın özü – Figma ölçüləri ilə */
 .login-card {
-  width: 350px; /* Figma-da göstərilən en */
-  margin: 40px auto 0; /* ortada olsun */
+  width: 350px;                 /* Figma: 350px */
   background-color: #ffffff;
-  height: 441px;
-  border-radius: 12px;
-  padding: 24px 24px 28px;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 10px;          /* Figma: Radius 10px */
+  border: 1px solid #e7e9ed;    /* Figma: Border #E7E9ED */
+  box-shadow: 0 34px 33px -23px rgba(22, 28, 45, 0.13);
+  padding: 24px 25px 28px;
+  margin-top: 40px;
 }
 
 /* Form daxilində şaquli düzülüş */
@@ -72,14 +76,16 @@ html {
 .form-field label {
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   color: #111827;
-  padding-right: 288px;
+   padding-right: 288px;  
 }
 
 /* Inputlar */
 .form-field input {
-  padding: 12px 14px;
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
   border-radius: 8px;
   border: 1px solid #e5e7eb;
   font-size: 14px;
@@ -96,14 +102,14 @@ html {
   box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.18);
 }
 
-/* Sign In düyməsi */
+/* Sign In düyməsi – Figma: 300x59, radius 8 */
 .login-btn {
-  margin-top: 4px;
-  width: 100%;
-  padding: 14px 0;
+  width: 300px;
+  height: 59px;
+  margin: 16px auto 0;
   border: none;
   border-radius: 8px;
-  background: #4f46e5; /* bu rəngi dəyişə bilərsən */
+  background: #473bff; /* Figma: #473BFO */
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
@@ -112,13 +118,13 @@ html {
 }
 
 .login-btn:hover {
-  background: #4338ca;
+  background: #3d34d0;
   transform: translateY(-1px);
 }
 
 /* Aşağıdakı “Don’t have an account?” */
 .login-bottom-text {
-  margin-top: 18px;
+  margin-top: 24px;
   text-align: center;
   font-size: 14px;
   color: #4b5563;
@@ -127,11 +133,19 @@ html {
 .login-bottom-text a {
   color: #4f46e5;
   text-decoration: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  text-align: center;
 }
 
 .login-bottom-text a:hover {
   text-decoration: underline;
 }
+
+/* GLOBAL P TAG (əvvəlki kimi saxladım) */
 p {
   font-family: Roboto;
   font-weight: 400;
@@ -140,14 +154,13 @@ p {
   letter-spacing: -0.2px;
   text-align: center;
 }
-p a {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
-  letter-spacing: -0.2px;
-  text-align: center;
+.ronaldo{
+  color: white;
+  background-color: white;
+  width: 100%;
+  height: 69px;
 }
+
 /*  FOOTER SECTION   */
 .footer {
   width: 100%;
@@ -185,6 +198,7 @@ p a {
   font-family: var(--inter-regular);
   width: 274px;
 }
+
 .social_icons {
   display: flex;
   align-items: center;
@@ -215,6 +229,7 @@ p a {
   display: flex;
   gap: 12px 0px;
 }
+
 .footer_item .footer-links {
   font-size: 14px;
   font-weight: 400;
