@@ -82,9 +82,8 @@ html {
 }
 
 .footer_logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 32px;
   color: var(--mainWhite);
   font-family: var(--rubik-regular);
 }
@@ -96,9 +95,9 @@ html {
 }
 
 .copy_txt {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 26px;
   color: var(--footertextcolor);
   width: 274px;
 }
@@ -110,34 +109,33 @@ html {
 
 .footer_right {
   display: flex;
-  gap: 50px;
+  gap: 70px;
 }
 
 .footer_links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 20px;
   color: var(--footertextcolor);
 }
 
 .footer_title {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 28px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .footer_item {
   display: flex;
-  gap: 12px 0px;
+  gap: 12px;
 }
 .footer_item .footer-link {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 40px;
   color: var(--mainWhite);
   display: block;
-  margin-bottom: 12px;
 }
 
 .input_wrapper .email_input {
