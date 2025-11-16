@@ -6,6 +6,8 @@
 .hero_content {
   max-width: 1600px;
   margin: 0 auto;
+  background-image: url(../../img/wave1_img.svg);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,6 +27,7 @@
   line-height: 32px;
   width: 370px;
   padding-top: 21px;
+  color: var(--text-color-light);
 }
 
 .hero_image {
@@ -55,4 +58,36 @@
 
 #animated-word {
   animation: blink 0.7s infinite;
+}
+
+.companies {
+  padding: 114px 418px 125px 418px;
+  gap: 60px;
+}
+
+.company_text {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.company_title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.company_txt {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 30px;
+  color: var(--text-color-light);
+}
+
+.company_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 43px;
+  padding-top: 60px;
 }
