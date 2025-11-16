@@ -1,0 +1,58 @@
+.hero_section {
+  background-color: var(--mainGreen);
+  width: 100%;
+}
+
+.hero_content {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 272px 0 354px;
+  gap: 174px;
+}
+
+.hero_title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.hero_txt {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  width: 370px;
+  padding-top: 21px;
+}
+
+.hero_image {
+  flex-shrink: 0;
+}
+
+.hero_img {
+  width: 100%;
+  height: auto;
+}
+
+#animated-word {
+  border-right: 2px solid #000;
+  padding-right: 2px;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    border-color: transparent;
+  }
+  25%,
+  75% {
+    border-color: #000;
+  }
+}
+
+#animated-word {
+  animation: blink 0.7s infinite;
+}
