@@ -1,39 +1,29 @@
-
-
-
 @font-face {
-  font-family: RobotoMedium;
-  src: url('../../fonts/Roboto/static/Roboto-Medium.ttf');
+  font-family: RobotoRegular;
+  src: url('../../fonts/Roboto/static/Roboto-Regular.ttf');
 }
 
 @font-face {
-  font-family: InterRegular;
-  src: url('../../fonts/Inter/static/Inter-Regular.ttf');
+  font-family: RubikRegular;
+  src: url('../../fonts/Rubik/static/Rubik-Regular.ttf');
 }
 
-@font-face {
-  font-family: InterSemiBold;
-  src: url('../../fonts/Inter/static/Inter-SemiBold.ttf');
+:root {
+  /* COLORS */
+
+  --mainGreen: #f0fbf3;
+  --mainWhite: #ffffff;
+  --text-color-light: #7d818d;
+  --graycolor: #f4f7fa;
+  --dark-blue-color: #161c2d;
+  --footertextcolor: #7d818d;
+  --nav-hover-color: #fb6d45;
+  --blue-color: #473bf0;
 }
 
-:root{
+/* FONTS */
 
-    /* COLORS */
-
-    --mainGreen: #4CAF4F;
-    --mainWhite: #FFFFFF;
-    --text-color: #4D4D4D;
-    --text-color-light: #717171;
-    --bodycolor: #F5F5F5;
-    --graycolor: #F5F7FA;
-    --footercolor: #263238;
-    --footertextcolor: #D9DBE1;
-}
-
-    /* FONTS */
-
-:root{
-    --roboto-medium: 'RobotoMedium', sans-serif;
-    --inter-regular: 'InterRegular', sans-serif;
-    --inter-semi-bold: 'InterSemiBold', sans-serif;
+:root {
+  --roboto-regular: 'RobotoRegular', sans-serif;
+  --rubik-regular: 'RubikRegular', sans-serif;
 }

@@ -1,73 +1,59 @@
 html {
-  background-color: var(--bodycolor);
-  font-family: var(--inter-regular);
-}
-
-/* HEADER SECTION */
-.container {
-  width: 100%;
-  background-color: var(--bodycolor);
-  position: sticky;
-  top: 0;
-  z-index: 10000;
+  font-family: var(--roboto-regular);
 }
 
 .header_cont {
-  width: 100%;
-  background-color: var(--graycolor);
+  width: 1508px;
+  margin: 0 auto;
+  background-color: var(--mainGreen);
+  padding: 21px 150px 0px 203px;
 }
 
 .header {
-  max-width: 1440px;
-  height: 84px;
-  margin: 0 auto;
-  padding: 0px 120px 0px 105px;
+  max-width: 100%;
+  height: 33px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.comp_logo {
-  padding-right: 168px;
-}
-
-.navbar {
-  padding-right: 126px;
+.comp_name {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: var(--rubik-regular);
 }
 
 .nav_menu {
   display: flex;
   align-items: baseline;
-  gap: 0px 50px;
+  gap: 40px;
 }
 
 .nav_item {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 700;
   line-height: 24px;
-  color: #18191f;
-  text-decoration: none;
-  font-family: var(--inter-regular);
+  color: var(--dark-blue-color);
+  transition: color 0.3s ease-in-out;
 }
 
-.nav_item:hover {
-  font-family: var(--roboto-medium);
-  font-weight: 500;
+.nav_item:hover,
+.nav_item.active {
+  color: var(--nav-hover-color);
 }
 
 .nav_btns {
   display: flex;
   align-items: center;
-  gap: 0px 14px;
+  gap: 40px;
 }
 
 .btn_login,
 .btn_signup {
-  font-size: 14px;
-  font-weight: 500px;
-  line-height: 20px;
-  padding: 10px 20px;
-  color: var(--mainGreen);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--dark-blue-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -76,24 +62,23 @@ html {
 
 .btn_login:hover,
 .btn_signup:hover {
-  background-color: var(--mainGreen);
-  color: var(--mainWhite);
+  color: var(--nav-hover-color);
   transition: all 0.3s ease-in-out;
 }
 
 /*  FOOTER SECTION   */
 .footer {
   width: 100%;
-  background-color: var(--footercolor);
+  background-color: var(--dark-blue-color);
 }
 
 .footer_cont {
-  max-width: 1440px;
-  padding: 64px 165px;
+  max-width: 1600px;
+  padding: 122px 245px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 100px;
 }
 
 .footer_logo {
@@ -101,13 +86,13 @@ html {
   font-weight: 700;
   line-height: 32px;
   color: var(--mainWhite);
-  font-family: var(--roboto-bold);
+  font-family: var(--rubik-regular);
 }
 
 .footer_left {
   display: flex;
   flex-direction: column;
-  gap: 40px 0px;
+  gap: 40px;
 }
 
 .copy_txt {
@@ -115,7 +100,6 @@ html {
   font-weight: 400;
   line-height: 20px;
   color: var(--footertextcolor);
-  font-family: var(--inter-regular);
   width: 274px;
 }
 .social_icons {
@@ -126,7 +110,7 @@ html {
 
 .footer_right {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .footer_links {
@@ -138,7 +122,6 @@ html {
 }
 
 .footer_title {
-  font-family: var(--inter-regular);
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -148,12 +131,11 @@ html {
   display: flex;
   gap: 12px 0px;
 }
-.footer_item .footer-links {
+.footer_item .footer-link {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  font-family: var(--inter-regular);
-  color: var(--footertextcolor);
+  color: var(--mainWhite);
   display: block;
   margin-bottom: 12px;
 }
