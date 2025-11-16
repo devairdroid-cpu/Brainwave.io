@@ -23,25 +23,30 @@
           <h1 class="login">Login</h1>
           <p class="content_login">To get started, you need to sign in here.</p>
         </div>
-        <div class="form">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="i.e. john@mail.com"
-          />
+       <!-- FORM BOX START -->
+<div class="login-card">
+  <form class="login-form">
 
-          <label for="password">Password</label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            placeholder="********"
-          />
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="i.e. john@mail.com">
+    </div>
 
-          <button type="submit" class="signin_btn">Sign In</button> 
-        </div>
+    <div class="form-field">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="********">
+    </div>
+
+    <button type="submit" class="login-btn">Sign In</button>
+
+  </form>
+</div>
+
+<p class="login-bottom-text">
+  Don’t have an account? <a href="#">Create an account</a>
+</p>
+<!-- FORM BOX END -->
+
       </main>
 
       <!-- FOOTER SECTION -->

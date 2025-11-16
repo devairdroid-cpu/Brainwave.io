@@ -17,7 +17,10 @@ html {
 }
 /* MAIN SECTION */
 .main_section {
-  width: 100%;
+  width: 1600px;
+  height: 910px;
+  padding-top: 79px;
+  opacity: 1;
   text-align: center;
   background-color: #f4f7fa;
 }
@@ -37,50 +40,113 @@ html {
   margin-top: 12px;
 }
 
-.form {
-  width: 350px;
-  height: 373px;
-  opacity: 1;
-  border-radius: 10px;
-  border-width: 1px;
-  box-shadow: 0px 34px 33px -23px #161c2d21;
-  border: 1px solid #e7e9ed;
+/* ==== LOGIN FORM BOX ==== */
+
+/* Kartın özü – ölçünü burdan dəyişə bilərsən */
+.login-card {
+  width: 350px; /* Figma-da göstərilən en */
+  margin: 40px auto 0; /* ortada olsun */
+  background-color: #ffffff;
+  height: 441px;
+  border-radius: 12px;
+  padding: 24px 24px 28px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-input {
-  border: 1px solid var(--lightGrey);
+
+/* Form daxilində şaquli düzülüş */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label + input blokları */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+  padding-right: 288px;
+}
+
+/* Inputlar */
+.form-field input {
+  padding: 12px 14px;
   border-radius: 8px;
-  width: 300px;
-  height: 50px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.form-field input::placeholder {
+  color: #9ca3af;
+}
+
+.form-field input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.18);
+}
+
+/* Sign In düyməsi */
+.login-btn {
+  margin-top: 4px;
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5; /* bu rəngi dəyişə bilərsən */
+  color: #ffffff;
   font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* Aşağıdakı “Don’t have an account?” */
+.login-bottom-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.login-bottom-text a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.login-bottom-text a:hover {
+  text-decoration: underline;
+}
+p {
+  font-family: Roboto;
   font-weight: 400;
-  padding: 12px;
-  margin-bottom: 21px;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  text-align: center;
 }
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    appearance: none;
-}
-label {
-    display: block;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--mainBlack);
-    padding: 7px;
-}
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+p a {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  text-align: center;
 }
 /*  FOOTER SECTION   */
 .footer {
