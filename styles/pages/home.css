@@ -105,7 +105,7 @@
 .job_cont {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 132px 240px 144px 250px;
+  padding: 132px 160px 144px 250px;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -167,5 +167,79 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
+  color: var(--text-color-light);
+}
+
+.find_job_section {
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 113px;
+}
+
+.fjob_left {
+  display: block;
+  flex-shrink: 0;
+}
+
+.find_job_text {
+  text-align: center;
+}
+
+.find_job_title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.find_job_txt {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 17px;
+  color: var(--text-color-light);
+}
+
+.fjob_instruction {
+  display: flex;
+  align-items: center;
+  padding: 96px 340px 116px 245px;
+  gap: 69px;
+}
+
+.fjob_content {
+  display: flex;
+  gap: 22px;
+  padding-bottom: 50px;
+}
+
+.fjob_number {
+  padding-top: 6px;
+}
+
+.num_item {
+  background-color: var(--blue-color);
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--mainWhite);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.fjob_title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+
+.fjob_txt {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
   color: var(--text-color-light);
 }
