@@ -1,0 +1,28 @@
+.h1story {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.pstory {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+.h1pstory {
+  margin-bottom: 58px;
+  width: 601px;
+  height: 202px;
+  opacity: 1;
+  margin-left: 254.5px;
+}
+img {
+  width: 1121px;
+  height: 748px;
+  opacity: 1;
+}

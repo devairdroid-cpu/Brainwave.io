@@ -1,0 +1,257 @@
+html {
+  background-color: var(--bodycolor);
+  font-family: var(--inter-regular);
+}
+
+/* HEADER SECTION */
+.header_cont {
+  background-color: rgb(255, 255, 255);
+}
+
+.header_cont h1 {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.13px;
+  padding: 25px 740px 26px 703px;
+}
+
+/* MAIN SECTION */
+.main_section {
+  background-color: #f4f7fa;
+  padding: 80px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* LOGIN TITLE + TEXT */
+.login {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+  color: #161c2d;
+  
+}
+
+.content_login {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  margin-top: 12px;
+  color: #161c2d;
+  opacity: 0.7;
+}
+
+/* ==== LOGIN FORM BOX ==== */
+
+/* Kartın özü – Figma ölçüləri ilə */
+.login-card {
+  width: 350px;  
+  height: 581px;               /* Figma: 350px */
+  background-color: #ffffff;
+  border-radius: 10px;          /* Figma: Radius 10px */
+  border: 1px solid #e7e9ed;    /* Figma: Border #E7E9ED */
+  box-shadow: 0 34px 33px -23px rgba(22, 28, 45, 0.13);
+  padding: 24px 25px 28px;
+  margin-top: 40px;
+}
+
+/* Form daxilində şaquli düzülüş */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label + input blokları */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+   padding-right: 288px;  
+   display: block;
+}
+
+/* Inputlar */
+.form-field input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.form-field input::placeholder {
+  color: #9ca3af;
+}
+
+.form-field input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.18);
+}
+
+/* Sign In düyməsi – Figma: 300x59, radius 8 */
+.login-btn {
+  width: 300px;
+  height: 59px;
+  margin: 16px auto 0;
+  border: none;
+  border-radius: 8px;
+  background: #473bff; /* Figma: #473BFO */
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background: #3d34d0;
+  transform: translateY(-1px);
+}
+
+/* Aşağıdakı “Don’t have an account?” */
+.login-bottom-text {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.login-bottom-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.login-bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* GLOBAL P TAG (əvvəlki kimi saxladım) */
+p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+.ronaldo{
+  color: white;
+  background-color: white;
+  width: 100%;
+  height: 69px;
+}
+
+/*  FOOTER SECTION   */
+.footer {
+  width: 100%;
+  background-color: #161c2d;
+}
+
+.footer_cont {
+  max-width: 1440px;
+  padding: 64px 165px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--mainWhite);
+  font-family: var(--roboto-bold);
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0px;
+}
+
+.copy_txt {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--footertextcolor);
+  font-family: var(--inter-regular);
+  width: 274px;
+}
+
+.social_icons {
+  display: flex;
+  align-items: center;
+  gap: 0px 16px;
+}
+
+.footer_right {
+  display: flex;
+  gap: 30px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  color: var(--footertextcolor);
+}
+
+.footer_title {
+  font-family: var(--inter-regular);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.footer_item {
+  display: flex;
+  gap: 12px 0px;
+}
+
+.footer_item .footer-links {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: var(--inter-regular);
+  color: var(--footertextcolor);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.input_wrapper .email_input {
+  padding: 9px 12px;
+  border-radius: 8px;
+  color: var(--footertextcolor);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #515b60;
+  font-weight: 400;
+}
+
+.input_wrapper .email_input::placeholder {
+  color: var(--footertextcolor);
+}
