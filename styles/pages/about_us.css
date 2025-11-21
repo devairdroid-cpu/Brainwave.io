@@ -1,0 +1,233 @@
+.hero {
+        text-align: center;
+        padding: 80px 20px 60px;
+        background: white;
+      }
+
+      .hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 30px;
+        color: #1a1a1a;
+        font-weight: 700;
+      }
+
+      .hero p {
+        font-size: 1.1em;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto 20px;
+      }
+
+      .hero-image {
+        max-width: 900px;
+        margin: 50px auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Hide default img until loaded */
+      .team-member-image img,
+      .skills-images img,
+      .hero-image img {
+        background: #f0f0f0;
+      }
+
+      /* Content Section */
+      .content-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        max-width: 1200px;
+        margin: 80px auto;
+        padding: 0 80px;
+        align-items: center;
+      }
+
+      .content-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #1a1a1a;
+        line-height: 1.2;
+      }
+
+      .content-section p {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+      }
+
+      /* Skills Section */
+      .skills-section {
+        background: #f8f9fa;
+        padding: 80px 80px;
+      }
+
+      .skills-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+
+      .skills-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .skills-images .image-box {
+        background: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        aspect-ratio: 1;
+      }
+
+      .skills-images .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .skills-text h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #1a1a1a;
+      }
+
+      .skills-text p {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+      }
+
+      /* Team Section */
+      .team-section {
+        padding: 80px 80px;
+        text-align: center;
+        background: white;
+      }
+
+      .team-section h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+      }
+
+      .team-section > p {
+        color: #666;
+        margin-bottom: 60px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto 40px;
+      }
+
+      .team-member {
+        text-align: center;
+      }
+
+      .team-member-image {
+        width: 100%;
+        aspect-ratio: 3/4;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+
+      .team-member-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .team-member h3 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        color: #1a1a1a;
+      }
+
+      .team-member p {
+        color: #999;
+        font-size: 0.95em;
+      }
+
+      /* Color backgrounds for team members */
+      .bg-red {
+        background: #ff6b6b;
+      }
+      .bg-teal {
+        background: #00d4aa;
+      }
+      .bg-blue {
+        background: #b8c5ff;
+      }
+      .bg-coral {
+        background: #ffb8a8;
+      }
+      .bg-purple {
+        background: #9b72cf;
+      }
+      .bg-orange {
+        background: #ff5757;
+      }
+      .bg-green {
+        background: #b8e6b8;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .content-section,
+        .skills-container {
+          grid-template-columns: 1fr;
+          padding: 0 40px;
+        }
+
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .skills-section,
+        .team-section {
+          padding: 60px 40px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5em;
+        }
+
+        .content-section h2,
+        .skills-text h2 {
+          font-size: 2em;
+        }
+
+        .team-section h2 {
+          font-size: 2.2em;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .content-section,
+        .skills-section,
+        .team-section {
+          padding: 40px 20px;
+        }
+      }
