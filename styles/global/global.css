@@ -5,7 +5,13 @@ html {
 
 /* HEADER SECTION */
 .header_cont {
+<<<<<<< Updated upstream
   background-color: rgb(255, 255, 255);
+=======
+  width: 1508px;
+  margin: 0 auto;
+  padding: 21px 150px 0px 203px;
+>>>>>>> Stashed changes
 }
 
 .header_cont h1 {
