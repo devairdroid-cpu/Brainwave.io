@@ -1,0 +1,167 @@
+.story_section {
+  width: 100%;
+}
+
+.story_content {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 109px;
+  gap: 60px;
+}
+
+.story_text {
+  text-align: center;
+}
+
+.story_title {
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+.story_info {
+  width: 600px;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--text-color-light);
+  padding-top: 45px;
+}
+
+.story_text2 {
+  width: 1110px;
+  display: flex;
+  gap: 120px;
+  padding: 60px 0px 130px 0px;
+}
+
+.story_title2 {
+  width: 450px;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.story_info2 {
+  width: 470px;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--text-color-light);
+}
+
+/* Coders Section */
+
+.coders_section {
+  width: 100%;
+  background-color: var(--graycolor);
+}
+
+.coders_cont {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  padding: 140px 254px 180px 254px;
+  column-gap: 95px;
+}
+
+.coders_image {
+  flex-shrink: 0;
+  display: flex;
+  gap: 26px;
+}
+
+.img_left,
+.img_right {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.img_right {
+  transform: translateY(40px);
+}
+
+.coders_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(60px);
+}
+
+.coders_title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.coders_info {
+  width: 500px;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--text-color-light);
+}
+
+/* Our team section */
+
+.our_team_section {
+  width: 100%;
+}
+
+.our_team_cont {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 107px 220px 180px 220px;
+}
+
+.our_team_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our_team_title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.our_team_txt {
+  width: 600px;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+.our_team_cards {
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 60px;
+  padding-top: 70px;
+}
+
+.user_name {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 30px;
+}
+
+.user_position {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  padding-top: 5px;
+  color: var(--text-color-light);
+}
