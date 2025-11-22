@@ -5,6 +5,13 @@ html {
 .header_cont {
   width: 1508px;
   margin: 0 auto;
+  background-color: var(--mainWhite);
+  padding: 21px 150px 0px 203px;
+}
+
+.header_cont_home {
+  width: 1508px;
+  margin: 0 auto;
   background-color: var(--mainGreen);
   padding: 21px 150px 0px 203px;
 }
