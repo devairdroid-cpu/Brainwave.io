@@ -16,12 +16,32 @@ html {
   padding: 21px 150px 0px 203px;
 }
 
+.header_cont_login {
+  width: 1508px;
+  margin: 0 auto;
+  background-color: var(--mainWhite);
+}
+
+.header_login {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   max-width: 100%;
   height: 33px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.comp_name_login {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--rubik-regular);
 }
 
 .comp_name {

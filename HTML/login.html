@@ -7,19 +7,53 @@
     <link rel="stylesheet" href="../styles/global/reset.css" />
     <link rel="stylesheet" href="../styles/global/config.css" />
     <link rel="stylesheet" href="../styles/global/global.css" />
-    <link rel="stylesheet" href="../styles/pages/home.css" />
+    <link rel="stylesheet" href="../styles/pages/login.css" />
   </head>
   <body>
     <div class="container">
       <!-- HEADR SECTION  -->
-      <div class="header_cont">
-        <header class="header">
-          <h1>Brainwave.io</h1>
+      <div class="header_cont_login">
+        <header class="header_login">
+          <a href="../index.html"
+            ><h1 class="comp_name_login">Brainwave.io</h1></a
+          >
         </header>
       </div>
       <!-- MAIN SECTION  -->
       <main class="main_section">
-        <section class="hero_section"></section>
+        <section class="form_section">
+          <div class="form_cont">
+            <div class="about_login">
+              <h2 class="login">Login</h2>
+              <p class="content_login">
+                To get started, you need to sign in here.
+              </p>
+            </div>
+            <!-- FORM BOX START -->
+            <div class="login_card">
+              <form class="login-form">
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="i.e. john@mail.com"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" placeholder="****" />
+                </div>
+
+                <button type="submit" class="login-btn">Sign In</button>
+              </form>
+            </div>
+            <p class="login-bottom-text">
+              Don’t have an account? <a href="#">Create an account</a>
+            </p>
+          </div>
+        </section>
       </main>
 
       <!-- FOOTER SECTION -->
