@@ -101,6 +101,35 @@
   padding-top: 60px;
 }
 
+.wobble {
+  display: inline-block;
+  transition: transform 0.2s ease-out;
+  transform-origin: 50% -30px;
+}
+
+.wobble:hover {
+  animation: wobble-effect 0.6s ease-out forwards;
+  cursor: pointer;
+}
+
+@keyframes wobble-effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* JOB SECTION */
 .job_section {
   width: 100%;
@@ -186,6 +215,25 @@
 .fjob_left {
   display: block;
   flex-shrink: 0;
+}
+
+.fjob_img {
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(0.2, 0, 0.6, 1);
+  animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 50px;
+  }
 }
 
 .find_job_text {
@@ -412,7 +460,14 @@
 .news_card {
   width: 350px;
   background-color: var(--mainWhite);
-  /* border-radius: 10px 0; */
+  border-radius: 10px;
+}
+
+.news_card:hover {
+  box-shadow: 0px 4px 15px #0000001a;
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
 }
 
 .card_info {
@@ -511,4 +566,19 @@
   line-height: 32px;
   color: var(--mainWhite);
   border-radius: 8px;
+}
+
+.sub_wrapper .wrapper {
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.sub_wrapper:focus-within {
+  border: 1px solid var(--blue-color);
+  transition: border 0.3s;
 }

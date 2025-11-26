@@ -134,6 +134,17 @@ html {
   gap: 0px 16px;
 }
 
+/* hover inline svg */
+.social_icons a svg path,
+.social_icons a svg circle {
+  transition: fill 0.3s;
+}
+
+.social_icons a:hover svg path,
+.social_icons a:hover svg circle {
+  fill: #68d585;
+}
+
 .footer_right {
   display: flex;
   gap: 70px;
@@ -163,18 +174,4 @@ html {
   line-height: 40px;
   color: var(--mainWhite);
   display: block;
-}
-
-.input_wrapper .email_input {
-  padding: 9px 12px;
-  border-radius: 8px;
-  color: var(--footertextcolor);
-  font-size: 14px;
-  line-height: 20px;
-  background-color: #515b60;
-  font-weight: 400;
-}
-
-.input_wrapper .email_input::placeholder {
-  color: var(--footertextcolor);
 }
