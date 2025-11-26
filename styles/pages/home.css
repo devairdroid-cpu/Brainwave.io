@@ -217,6 +217,25 @@
   flex-shrink: 0;
 }
 
+.fjob_img {
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(0.2, 0, 0.6, 1);
+  animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+
 .find_job_text {
   text-align: center;
 }
@@ -547,4 +566,19 @@
   line-height: 32px;
   color: var(--mainWhite);
   border-radius: 8px;
+}
+
+.sub_wrapper .wrapper {
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.sub_wrapper:focus-within {
+  border: 1px solid var(--blue-color);
+  transition: border 0.3s;
 }
