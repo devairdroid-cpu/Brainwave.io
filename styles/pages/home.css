@@ -41,25 +41,45 @@
   height: auto;
 }
 
-#animated-word {
-  border-right: 2px solid #000;
-  padding-right: 2px;
+.typing {
+  width: 12ch;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  animation: typing 3s steps(12), erase 3s steps(12) 3s, typing 3s steps(12) 6s,
+    blink 0.6s step-end infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+
+  to {
+    width: 12ch;
+  }
+}
+
+@keyframes erase {
+  from {
+    width: 12ch;
+  }
+
+  to {
+    width: 0ch;
+  }
 }
 
 @keyframes blink {
-  0%,
-  50%,
-  100% {
-    border-color: transparent;
+  from {
+    border-right-color: black;
   }
-  25%,
-  75% {
-    border-color: #000;
-  }
-}
 
-#animated-word {
-  animation: blink 0.7s infinite;
+  to {
+    border-right-color: transparent;
+  }
 }
 
 /* Companies section */
@@ -205,11 +225,15 @@
 
 /* FIND JOB SECTION */
 .find_job_section {
+  width: 100%;
+  border-bottom: 1px solid #e7e9ed;
+}
+
+.find_job_cont {
   max-width: 1600px;
   margin: 0 auto;
   align-items: center;
   padding-top: 113px;
-  border-bottom: 1px solid #e7e9ed;
 }
 
 .fjob_left {
@@ -343,8 +367,21 @@
   justify-content: center;
 }
 
-.arrow_btn {
+.arrow_btn_right {
   padding: 15px;
+  border-radius: 10px 0 0 10px;
+}
+
+.arrow_btn_left {
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+}
+
+.arrow_btn_left:hover,
+.arrow_btn_right:hover {
+  background-color: #ebebeb;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .position_info_cards {
@@ -560,19 +597,27 @@
 
 .sub_btn {
   background-color: var(--blue-color);
-  padding: 10px 45px;
+  padding: 10px 40px;
   font-size: 17px;
   font-weight: 700;
   line-height: 32px;
   color: var(--mainWhite);
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub_btn:hover {
+  background-color: #2e2ed3;
+  transition: 0.3s ease;
 }
 
 .sub_wrapper .wrapper {
   padding: 9px 12px;
   border-radius: 8px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 100%;
   font-weight: 400;
   display: flex;
   align-items: center;
