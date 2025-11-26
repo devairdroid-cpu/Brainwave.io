@@ -42,12 +42,12 @@
 }
 
 .typing {
-  width: 12ch;
+  width: 11ch;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid black;
-  animation: typing 3s steps(12), erase 3s steps(12) 3s, typing 3s steps(12) 6s,
+  animation: typing 3s steps(11), erase 3s steps(11) 3s, typing 3s steps(11) 6s,
     blink 0.6s step-end infinite alternate;
   animation-iteration-count: infinite;
 }
@@ -58,13 +58,13 @@
   }
 
   to {
-    width: 12ch;
+    width: 11ch;
   }
 }
 
 @keyframes erase {
   from {
-    width: 12ch;
+    width: 11ch;
   }
 
   to {
